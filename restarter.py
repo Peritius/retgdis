@@ -199,7 +199,7 @@ class App(ctk.CTk):
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
 
-        self.title("Restarter")
+        self.title("retgdis")
         self.geometry("480x380")
         self.resizable(False, False)
         self.protocol("WM_DELETE_WINDOW", self.on_close)
@@ -232,7 +232,7 @@ class App(ctk.CTk):
     def _build_ui(self):
         pad = {"padx": 20, "pady": 8}
 
-        header = ctk.CTkLabel(self, text="Restarter", font=ctk.CTkFont(size=22, weight="bold"))
+        header = ctk.CTkLabel(self, text="retgdis", font=ctk.CTkFont(size=22, weight="bold"))
         header.pack(pady=(24, 4))
 
         sub = ctk.CTkLabel(self, text="Менеджер процесів Telegram і Discord", font=ctk.CTkFont(size=13), text_color="gray")
@@ -334,7 +334,7 @@ class App(ctk.CTk):
                 pystray.Menu.SEPARATOR,
                 pystray.MenuItem("Вихід", lambda icon, item: self._quit()),
             )
-            self.tray_icon = pystray.Icon("Restarter", img, "Restarter", menu)
+            self.tray_icon = pystray.Icon("retgdis", img, "retgdis", menu)
             threading.Thread(target=self.tray_icon.run, daemon=True).start()
         except Exception:
             pass

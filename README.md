@@ -1,4 +1,4 @@
-# Restarter
+# retgdis
 
 A simple utility to restart Telegram and Discord clients on Windows and Linux.
 
@@ -34,20 +34,20 @@ Pre-built binaries are available on the [Releases](../../releases) page:
 
 | File | Platform |
 |------|----------|
-| `Restarter.exe` | Windows |
-| `Restarter` | Linux (Debian/Ubuntu) |
-| `Restarter-rhel` | Linux (RHEL/Rocky/Fedora) |
-| `Restarter-opensuse` | Linux (openSUSE) |
+| `retgdis.exe` | Windows |
+| `retgdis` | Linux (Debian/Ubuntu) |
+| `retgdis-rhel` | Linux (RHEL/Rocky/Fedora) |
+| `retgdis-opensuse` | Linux (openSUSE) |
 
 On Linux, make the file executable before running:
 ```bash
-chmod +x Restarter
-./Restarter
+chmod +x retgdis
+./retgdis
 ```
 
 ## config.json
 
-Created automatically next to the executable. Stores paths to Telegram and Discord binaries. Filled in automatically if the apps are already running when Restarter starts.
+Created automatically next to the executable. Stores paths to Telegram and Discord binaries. Filled in automatically if the apps are already running when retgdis starts.
 
 ## Tray
 
@@ -66,7 +66,7 @@ Right-click the tray icon (the UI is in Ukrainian):
 
 ---
 
-# Restarter
+# retgdis
 
 Проста утиліта для перезапуску клієнтів Telegram і Discord на Windows та Linux.
 
@@ -102,20 +102,20 @@ pytest
 
 | Файл | Платформа |
 |------|-----------|
-| `Restarter.exe` | Windows |
-| `Restarter` | Linux (Debian/Ubuntu) |
-| `Restarter-rhel` | Linux (RHEL/Rocky/Fedora) |
-| `Restarter-opensuse` | Linux (openSUSE) |
+| `retgdis.exe` | Windows |
+| `retgdis` | Linux (Debian/Ubuntu) |
+| `retgdis-rhel` | Linux (RHEL/Rocky/Fedora) |
+| `retgdis-opensuse` | Linux (openSUSE) |
 
 На Linux перед запуском зробіть файл виконуваним:
 ```bash
-chmod +x Restarter
-./Restarter
+chmod +x retgdis
+./retgdis
 ```
 
 ## config.json
 
-Створюється автоматично поруч із виконуваним файлом. Зберігає шляхи до бінарників Telegram і Discord. Заповнюється автоматично, якщо застосунки вже запущені на момент старту Restarter.
+Створюється автоматично поруч із виконуваним файлом. Зберігає шляхи до бінарників Telegram і Discord. Заповнюється автоматично, якщо застосунки вже запущені на момент старту retgdis.
 
 ## Трей
 

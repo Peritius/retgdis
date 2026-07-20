@@ -40,13 +40,13 @@ jobs:
         run: pip install customtkinter pystray pillow pyinstaller
 
       - name: Build
-        run: pyinstaller --onefile --windowed --name Restarter restarter.py
+        run: pyinstaller --onefile --windowed --name retgdis restarter.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Restarter-windows
-          path: dist/Restarter.exe
+          name: retgdis-windows
+          path: dist/retgdis.exe
 
   build-deb:
     needs: test
@@ -67,13 +67,13 @@ jobs:
         run: pip install customtkinter pystray pillow pyinstaller
 
       - name: Build
-        run: pyinstaller --onefile --windowed --name Restarter --collect-all customtkinter restarter.py
+        run: pyinstaller --onefile --windowed --name retgdis --collect-all customtkinter restarter.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Restarter-linux-deb
-          path: dist/Restarter
+          name: retgdis-linux-deb
+          path: dist/retgdis
 
   build-rpm-rhel:
     needs: test
@@ -90,13 +90,13 @@ jobs:
         run: pip3 install customtkinter pystray pillow pyinstaller
 
       - name: Build
-        run: pyinstaller --onefile --windowed --name Restarter-rhel --collect-all customtkinter restarter.py
+        run: pyinstaller --onefile --windowed --name retgdis-rhel --collect-all customtkinter restarter.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Restarter-linux-rhel
-          path: dist/Restarter-rhel
+          name: retgdis-linux-rhel
+          path: dist/retgdis-rhel
 
   build-rpm-opensuse:
     needs: test
@@ -120,13 +120,13 @@ jobs:
       - name: Build
         run: |
           source /tmp/build_env/bin/activate
-          pyinstaller --onefile --windowed --name Restarter-opensuse --collect-all customtkinter restarter.py
+          pyinstaller --onefile --windowed --name retgdis-opensuse --collect-all customtkinter restarter.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Restarter-linux-opensuse
-          path: dist/Restarter-opensuse
+          name: retgdis-linux-opensuse
+          path: dist/retgdis-opensuse
 
   release:
     runs-on: ubuntu-latest
@@ -143,7 +143,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
-            artifacts/Restarter-windows/Restarter.exe
-            artifacts/Restarter-linux-deb/Restarter
-            artifacts/Restarter-linux-rhel/Restarter-rhel
-            artifacts/Restarter-linux-opensuse/Restarter-opensuse
+            artifacts/retgdis-windows/retgdis.exe
+            artifacts/retgdis-linux-deb/retgdis
+            artifacts/retgdis-linux-rhel/retgdis-rhel
+            artifacts/retgdis-linux-opensuse/retgdis-opensuse
