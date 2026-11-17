@@ -1,6 +1,18 @@
+<div align="center">
+
 # retgdis
 
-A simple utility to restart Telegram and Discord clients on Windows and Linux.
+**A simple utility to restart Telegram and Discord clients on Windows and Linux. No ads, no trackers, no API keys.**
+
+[![Windows & Linux](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-blue?logo=windows&logoColor=white)](#downloads)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://python.org)
+[![License](https://img.shields.io/badge/license-GPL--3.0-blue)](LICENSE)
+
+[![Release](https://img.shields.io/github/v/release/Peritius/retgdis?include_prereleases&logo=github)](https://github.com/Peritius/retgdis/releases)
+
+</div>
+
+[Features](#features) · [Run from source](#run-from-source) · [Downloads](#downloads) · [Tray](#tray) · [License](#license)
 
 ## Features
 
@@ -30,7 +42,7 @@ pytest
 
 ## Downloads
 
-Pre-built binaries are available on the [Releases](../../releases) page:
+Pre-built binaries are available on [Releases](https://github.com/Peritius/retgdis/releases):
 
 | File | Platform |
 |------|----------|
@@ -64,11 +76,18 @@ Right-click the tray icon (the UI is in Ukrainian):
 3. Waits until every matching process has actually exited (with a timeout)
 4. Starts the executable again in its directory as a detached process
 
+## License
+
+retgdis is released under the [GNU General Public License v3.0](LICENSE).
+
 ---
+
+<details>
+<summary>Українською</summary>
 
 # retgdis
 
-Проста утиліта для перезапуску клієнтів Telegram і Discord на Windows та Linux.
+**Проста утиліта для перезапуску клієнтів Telegram і Discord на Windows та Linux. Без реклами, без трекерів, без ключів API.**
 
 ## Можливості
 
@@ -98,7 +117,7 @@ pytest
 
 ## Завантаження
 
-Готові бінарники доступні на сторінці [Releases](../../releases):
+Готові бінарники доступні на сторінці [Releases](https://github.com/Peritius/retgdis/releases):
 
 | Файл | Платформа |
 |------|-----------|
@@ -131,3 +150,9 @@ chmod +x retgdis
 2. Вбиває їх усі (`SIGKILL` плюс групу процесів на Linux; `taskkill /F /T` для знищення дерева процесів на Windows)
 3. Чекає, доки всі знайдені процеси справді завершаться (з таймаутом)
 4. Знову запускає виконуваний файл у його директорії як відокремлений процес
+
+## Ліцензія
+
+GNU General Public License v3.0.
+
+</details>
